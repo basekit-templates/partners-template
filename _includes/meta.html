@@ -1,0 +1,53 @@
+<!-- General meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Title meta -->
+{% if page.title contains site.title %}
+	<title>{{ page.title }}</title>
+{% else %}
+	<title>{{ page.title }} - {{ site.title }}</title>
+{% endif %}
+<meta property="og:title" content="{{ page.title }}">
+<meta name="twitter:title" content="{{ page.title }}">
+
+<!-- Description meta -->
+{% if page.excerpt %}
+  {% assign description = page.excerpt | strip_html | replace:'\n',' ' %}
+{% else %}
+  {% assign description = site.description %}
+{% endif %}
+<meta name="description" content="{{ description }}">
+<meta property="og:description" content="{{ description }}">
+<meta name="twitter:description" content="{{ description }}">
+
+<!-- Author meta -->
+<meta property="og:site_name" content="{{ site.title }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="{{ site.meta.twitter }}">
+
+<!-- Domain meta -->
+<meta name="twitter:domain" content="{{ site.url }}">
+<meta name="robots" content="index, follow">
+
+<!-- URL meta -->
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+
+<!-- Article meta -->
+{% if page.url == "/" %}
+	<meta property="og:type" content="website">
+{% else %}
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="https://www.facebook.com/{{ site.meta.facebook }}" />
+	<meta name="twitter:creator" content="{{ site.meta.twitter }}">
+{% endif %}
+
+<!-- Image meta -->
+{% if page.image %}
+  {% assign image = page.image %}
+{% else %}
+  {% assign image = site.avatar %}
+{% endif %}
+<meta property="og:image" content="{{ image }}">
+<meta name="twitter:image:src" content="{{ image }}">
