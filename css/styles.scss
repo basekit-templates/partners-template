@@ -1,7 +1,135 @@
 ---
 # Styles
 ---
+@import "normalize";
+@import "sassline";
+
+// Style variables
+$color--heading: {{ site.colour }};
+$color--copy: lighten($color--heading, 29%);
+$color--background: #ffffff;
 
 body {
-  color: {{ site.colour }}
+  color: $color--copy;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color--heading;
+}
+
+.button {
+  color: $color--background;
+  padding: .8rem 1.2rem .75rem;
+  border: 3px solid $color--background;
+  border-radius: 100px;
+  transition: .3s;
+  &:hover {
+    color: $color--background;
+    -webkit-filter: drop-shadow(0 0 5px fade-out($color--background, 0.5));
+  }
+}
+
+.block {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &--text-align-left {
+    text-align: left;
+  }
+  &--text-align-right {
+    text-align: right;
+  }
+  &--text-align-center {
+    text-align: center;
+  }
+}
+
+.header {
+  text-align: left;
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  color: $color--background;
+  h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+  }
+}
+
+.article {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  &--text-shade-light {
+    color: $color--background;
+    h1, h2, h3, h4, h5, h6 {
+      color: inherit;
+    }
+  }
+  &--content-arrange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Block specific styles
+.block--every-device {
+  overflow: hidden;
+  .figure {
+    min-width: 53%;
+  }
+  .content {
+    text-shadow: 0 0 18px rgba(0,0,0,0.74);
+    position: relative;
+    z-index: 1;
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+  }
+  @media (max-width: 640px) {
+    min-height: auto;
+    img {
+      position: relative;
+      height: auto;
+    }
+    .article--content-arrange {
+      flex-direction: column;
+    }
+    .figure {
+      order: 1;
+    }
+  }
+}
+
+.block--editor {
+  .figure {
+    margin-bottom: -3rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.block--share-moments {
+  .content {
+    margin-left: 65%;
+    width: 35%;
+    padding: 1rem 1.2rem;
+    background: $color--background;
+    box-shadow: 3px 3px 38px 0px rgba(0,0,0,0.24);
+  }
+  @media (max-width: 640px) {
+    .content {
+      margin-left: 0;
+      width: 100%;
+    }
+    .article {
+      margin: auto auto 6rem auto;
+    }
+  }
 }

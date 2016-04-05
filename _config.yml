@@ -18,14 +18,18 @@ excerpt_separator: <!-- more -->
 url: "http://basekit.com"
 title: "BaseKit"
 description: "The site builder"
-avatar: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=300"
+avatar: "https://avatars0.githubusercontent.com/u/1006602?s=100"
 avatarurl: "https://avatars0.githubusercontent.com/u/1006602"
-colour: "#363636"
+colour: "#383838"
 
 # Metadata
 meta:
   facebook: TeamBaseKit
   twitter: BaseKit
+
+# CSS
+sass:
+  style: compressed
 
 # Defaults
 defaults:
