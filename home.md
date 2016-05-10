@@ -31,8 +31,8 @@ seo:
 templates:
   heading: Something
   description: Something
-  image_top: /path/to/image.png
-  image_bottom: /path/to/image.png
+  image_top_path: /path/to/image.png
+  image_bottom_path: /path/to/image.png
   background_path: /path/to/image.png
 features:
   items:
@@ -44,19 +44,19 @@ features:
     description: Something
   background_path: /path/to/image.png
 pricing:
-  tier1:
+  tier_1:
     - Item 1
     - Item 2
     - Item 3
     - Item 4
     - Item 5
-  tier2:
+  tier_2:
     - Item 1
     - Item 2
     - Item 3
     - Item 4
     - Item 5
-  tier3:
+  tier_3:
     - Item 1
     - Item 2
     - Item 3
