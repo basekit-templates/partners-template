@@ -3,18 +3,20 @@ layout: default
 title: Home
 excerpt: Home page
 intro:
-  logo_path: /path/to/image.png
+  logo_path: "https://avatars0.githubusercontent.com/u/1006602?s=100"
   heading: Something
   description: Something
-  background_path: /path/to/image.png
+  background_path: "/images/background-hero.jpg"
+  background_colour: "#333333"
   footer: Something
 devices:
   heading: Something
   description: Something
-  image: /path/to/image.png
-  background_path: /path/to/image.png
+  image: "/images/image-editor.png"
+  background_path: ""
+  background_colour: "#ffffff"
 mobile:
-  image: /path/to/image.png
+  image: "/images/image-phone.png"
   steps:
   - title: Step 1
     description: Something
@@ -22,18 +24,21 @@ mobile:
     description: Something
   - title: Step 3
     description: Something
-  background_path: /path/to/image.png
+  background_path:
+  background_colour: "#151F26"
 seo:
   heading: Something
   description: Something
-  image: /path/to/image.png
-  background_path: /path/to/image.png
+  image: "/images/image-google.png"
+  background_path: ""
+  background_colour: "#f4f4f4"
 templates:
   heading: Something
   description: Something
-  image_top_path: /path/to/image.png
-  image_bottom_path: /path/to/image.png
-  background_path: /path/to/image.png
+  image_top_path: "/images/image-devices.png"
+  image_bottom_path: "/images/image-devices.png"
+  background_path: ""
+  background_colour: "#151F26"
 features:
   items:
   - title: Feature 1
@@ -42,7 +47,8 @@ features:
     description: Something
   - title: Feature 3
     description: Something
-  background_path: /path/to/image.png
+  background_path: "/images/background-sharing.jpg"
+  background_colour: "#ffffff"
 pricing:
   tier_1:
     - Item 1
@@ -62,5 +68,20 @@ pricing:
     - Item 3
     - Item 4
     - Item 5
-  background_path: /path/to/image.png
+  background_path: ""
+  background_colour: "#151F26"
 ---
+
+{% include blocks/block--intro.html %}
+
+{% include blocks/block--devices.html %}
+
+{% include blocks/block--mobile.html %}
+
+{% include blocks/block--seo.html %}
+
+{% include blocks/block--templates.html %}
+
+{% include blocks/block--features.html %}
+
+{% include blocks/block--pricing.html %}
