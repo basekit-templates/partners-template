@@ -1,20 +1,18 @@
-<section class="block  block--features  block--text-align-left">
+{% capture background %} style="background-color:{{ page.features.background_colour }}; background-image:url({{ page.features.background_path }}); background-position: center center; background-size: cover"{% endcapture %}
 
-	<article class="block__article  article  article--arrange-center">
+<section class="block  block--features  block--text-align-left" {{ background }}>
+
+	<article class="block__article  article  article--arrange-center  typeset">
+		{% if page.features.items %}
 		<ul class="block__list  list--features">
+			{% for feature in page.features.items %}
 			<li>
-				<h2>Something</h2>
-				<p>Something</p>
+				<h2>{{ feature.title }}</h2>
+				<p>{{ feature.description }}</p>
 			</li>
-			<li>
-				<h2>Something</h2>
-				<p>Something</p>
-			</ol>
-			<li>
-				<h2>Something</h2>
-				<p>Something</p>
-			</li>
+			{% endfor %}
 		</ul>
+		{% endif %}
 	</article>
 
 </section>

@@ -1,17 +1,29 @@
-<section class="block  block--templates  block--text-align-center">
+{% capture background %} style="background-color:{{ page.templates.background_colour }}; background-image:url({{ page.templates.background_path }}); background-position: center center; background-size: cover"{% endcapture %}
+
+<section class="block  block--templates  block--text-align-center" {{ background }}>
 
 	<header class="block__header  header">
-		{% include templates.html %}
+		{% if page.templates.image_top_path %}
+		<img src="{{ page.templates.image_top_path }}" alt="templates"/>
+		{% endif %}
 	</header>
 
-	<article class="block__article  article  article--arrange-center">
-		<h2>Something</h2>
-		<p>Something</p>
+	<article class="block__article  article  article--arrange-center  article--text-shade-light  typeset">
+		{% if page.templates.heading %}
+		<h2>{{ page.templates.heading }}</h2>
+		{% endif %}
+
+		{% if page.templates.description %}
+		<p>{{ page.templates.description }}</p>
+		{% endif %}
+
 		<a class="button">Something</a>
 	</article>
 
 	<footer class="block__footer  footer">
-		{% include templates.html %}
+		{% if page.templates.image_bottom_path %}
+		<img src="{{ page.templates.image_bottom_path }}" alt="templates"/>
+		{% endif %}
 	</footer>
 
 </section>

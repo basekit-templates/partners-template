@@ -1,52 +1,51 @@
-<section class="block  block--pricing  block--text-align-left">
+{% capture background %} style="background-color:{{ page.pricing.background_colour }}; background-image:url({{ page.pricing.background_path }}); background-position: center center; background-size: cover"{% endcapture %}
 
-	<article class="block__article  article  article--arrange-center">
+<section class="block  block--pricing  block--text-align-center" {{ background }}>
+
+	<article class="block__article  article  article--arrange-center  content-arrange  article--text-shade-light  typeset">
+
+		{% if page.pricing.tier_1 %}
 		<div class="block__price-tier  price-tier">
-			<h3>Something</h3>
+			<h3>Tier 1</h3>
 			<ul class="block__list  list--price-tier">
+				{% for item in page.pricing.tier_1 %}
 				<li>
-					<p>Something</p>
+					<p>{{ item }}</p>
 				</li>
-				<li>
-					<p>Something</p>
-				</ol>
-				<li>
-					<p>Something</p>
-				</li>
-				<a class="button">Something</a>
+				{% endfor %}
 			</ul>
 			<a class="button">Something</a>
 		</div>
+		{% endif %}
+
+		{% if page.pricing.tier_2 %}
 		<div class="block__price-tier  price-tier">
-			<h3>Something</h3>
+			<h3>Tier 1</h3>
 			<ul class="block__list  list--price-tier">
+				{% for item in page.pricing.tier_1 %}
 				<li>
-					<p>Something</p>
+					<p>{{ item }}</p>
 				</li>
-				<li>
-					<p>Something</p>
-				</ol>
-				<li>
-					<p>Something</p>
-				</li>
-				<a class="button">Something</a>
+				{% endfor %}
 			</ul>
+			<a class="button">Something</a>
 		</div>
+		{% endif %}
+
+		{% if page.pricing.tier_3 %}
 		<div class="block__price-tier  price-tier">
-			<h3>Something</h3>
+			<h3>Tier 1</h3>
 			<ul class="block__list  list--price-tier">
+				{% for item in page.pricing.tier_1 %}
 				<li>
-					<p>Something</p>
+					<p>{{ item }}</p>
 				</li>
-				<li>
-					<p>Something</p>
-				</ol>
-				<li>
-					<p>Something</p>
-				</li>
-				<a class="button">Something</a>
+				{% endfor %}
 			</ul>
+			<a class="button">Something</a>
 		</div>
+		{% endif %}
+
 	</article>
 
 </section>

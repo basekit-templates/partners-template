@@ -1,16 +1,29 @@
-<section class="block  block--intro  block--text-align-center">
+{% capture background %} style="background-color:{{ page.intro.background_colour }}; background-image:url({{ page.intro.background_path }}); background-position: center center; background-size: cover"{% endcapture %}
+
+<section class="block  block--intro  block--text-align-center" {{ background }}>
 
 	<header class="block__header  header">
-		{% include logo.html %}
+		{% if page.intro.logo_path %}
+		<div class="logo">
+		  <img src="{{ page.intro.logo_path }}" />
+		</div>
+		{% endif %}
 	</header>
 
-	<article class="block__article  article  article--arrange-center">
-		<h1>Something</h1>
-		<h3>Something</h3>
+	<article class="block__article  article  article--text-shade-light  typeset">
+		{% if page.intro.heading %}
+		<h1>{{ page.intro.heading }}</h1>
+		{% endif %}
+
+		{% if page.intro.description %}
+		<h3>{{ page.intro.description }}</h3>
+		{% endif %}
 	</article>
 
 	<footer class="block__footer  footer">
-		<img src="" alt="icon"/><p>Something</p>
+		{% if page.intro.footer %}
+		<img src="" alt="icon"/> <p>{{ page.intro.footer }}</p>
+		{% endif %}
 	</footer>
 
 </section>

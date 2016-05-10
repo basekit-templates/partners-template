@@ -1,12 +1,21 @@
-<section class="block  block--devices  block--text-align-center">
+{% capture background %} style="background-color:{{ page.devices.background_colour }}; background-image:url({{ page.devices.background_path }}); background-position: center center; background-size: cover"{% endcapture %}
 
-	<article class="block__article  article  article--arrange-center">
-		<h2>Something</h2>
-		<p>Something</p>
+<section class="block  block--devices  block--text-align-center" {{ background }}>
+
+	<article class="block__article  article  typeset">
+		{% if page.devices.heading %}
+		<h2>{{ page.devices.heading }}</h2>
+		{% endif %}
+
+		{% if page.devices.description %}
+		<p>{{ page.devices.description }}</p>
+		{% endif %}
 	</article>
 
-	<article class="block__article  article  article--arrange-center">
-		<img src="" alt="devices"/>
+	<article class="block__article  article">
+		{% if page.devices.image %}
+		<img src="{{ page.devices.image }}" alt="devices"/>
+		{% endif %}
 	</article>
 
 </section>
