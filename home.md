@@ -51,7 +51,7 @@ features:
   background_colour: '#ffffff'
 pricing:
   tier_1:
-    - Free hosting
+    - 'Free hosting!'
     - Item 2
     - Item 3
     - Item 4
