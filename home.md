@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Home
 excerpt: Home page
 intro:
@@ -51,7 +51,7 @@ features:
   background_colour: '#ffffff'
 pricing:
   tier_1:
-    - Free hosting
+    - Free hosting!
     - Item 2
     - Item 3
     - Item 4
@@ -71,3 +71,17 @@ pricing:
   background_path:
   background_colour: '#151f26'
 ---
+
+{% include blocks/block--intro.html %}
+
+{% include blocks/block--devices.html %}
+
+{% include blocks/block--mobile.html %}
+
+{% include blocks/block--seo.html %}
+
+{% include blocks/block--templates.html %}
+
+{% include blocks/block--features.html %}
+
+{% include blocks/block--pricing.html %}
