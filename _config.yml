@@ -2,7 +2,6 @@
 exclude:
 - README.md
 - LICENSE
-- CNAME
 
 # Gems
 gems:
