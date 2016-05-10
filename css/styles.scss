@@ -20,14 +20,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button {
-  color: $color--background;
-  padding: .8rem 1.2rem .75rem;
-  border: 3px solid $color--background;
+  cursor: pointer;
+  display: inline-block;
+  color: $color--copy;
+  padding: .5rem 1.2rem;
+  border: 3px solid $color--heading;
   border-radius: 100px;
   transition: .3s;
   &:hover {
-    color: $color--background;
-    -webkit-filter: drop-shadow(0 0 5px fade-out($color--background, 0.5));
+    color: $color--copy;
+    border-color: $color--copy;
   }
 }
 
@@ -68,11 +70,32 @@ h1, h2, h3, h4, h5, h6 {
     h1, h2, h3, h4, h5, h6 {
       color: inherit;
     }
+    .button {
+      color: $color--background;
+      border: 3px solid $color--background;
+      &:hover {
+        -webkit-filter: drop-shadow(0 0 5px fade-out($color--background, 0.5));
+      }
+    }
   }
-  &--content-arrange {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.content-arrange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  .article {
+    width: 50%;
+  }
+  @media (max-width: 640px) {
+    display: block;
+    .article {
+      width: 100%;
+    }
   }
 }
 
