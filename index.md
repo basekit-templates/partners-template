@@ -4,7 +4,7 @@ excerpt: Home page
 intro:
   logo_path: https://avatars0.githubusercontent.com/u/1006602?s=100
   heading: The same great experience<br/> across every device
-  description: Your business needs a fresh place to grow,  make it happen today!
+  description: Your business needs a fresh place to grow,<br/> make it happen today!
   background_path: "/uploads/background-hero.jpg"
   background_colour: "#333333"
   footer: Something
