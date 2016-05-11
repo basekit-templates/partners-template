@@ -1,49 +1,11 @@
-# Excluded files
-exclude:
-- README.md
-- LICENSE
-
-# Gems
-gems:
-- jekyll-sitemap
-
-# Permalinks
-permalink: pretty
-
-# Posts
-excerpt_separator: <!-- more -->
-
-# Site info
-url: "http://basekit.com"
-title: "BaseKit"
-description: "The site builder"
-avatar: "https://avatars0.githubusercontent.com/u/1006602?s=100"
-avatarurl: "https://avatars0.githubusercontent.com/u/1006602"
-colour: "#383838"
-
-# Metadata
-meta:
-  facebook: TeamBaseKit
-  twitter: BaseKit
-
-# CSS
-sass:
-  style: compressed
-
-# Defaults
-defaults:
-  -
-    scope:
-      path: ""
-      type: pages
-    values:
-      is_page: true
-      layout: page
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      is_post: true
-      layout: post
-      icon: article
+---
+title: Partners Template
+url: http://basekit-templates.github.io
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true

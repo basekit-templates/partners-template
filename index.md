@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Welcome
+layout: default
 excerpt: Welcome to BaseKit
 ---
 
