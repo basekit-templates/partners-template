@@ -1,27 +1,26 @@
 ---
 title: Home
-layout: default
 excerpt: Home page
 intro:
   logo_path: https://avatars0.githubusercontent.com/u/1006602?s=100
   heading: The same great experience<br/> across every device
   description: Your business needs a fresh place to grow,<br/>  make it happen today.
-  background_path: "/images/background-hero.jpg"
+  background_path: "/uploads/background-hero.jpg"
   background_colour: "#333333"
   footer: Something
-  button_text: ''
-  button_url: ''
+  button_text: 
+  button_url: 
 devices:
   heading: The new way to stay in control
   description: The only sitebuilder to give you a consistent, experience across your
     phone, tablet or computer. No app and no updating required
-  image: "/images/image-editor.png"
+  image: "/uploads/image-editor.png"
   background_path: 
   background_colour: "#ffffff"
-  button_text: ''
-  button_url: ''
+  button_text: 
+  button_url: 
 mobile:
-  image: "/images/image-phone.png"
+  image: "/uploads/image-phone.png"
   steps:
   - title: The same
     description: The only sitebuilder to give you a consistent, experience across
@@ -34,25 +33,25 @@ mobile:
       your phone, tablet or computer. No app and no updating required
   background_path: 
   background_colour: "#151f26"
-  button_text: ''
-  button_url: ''
+  button_text: 
+  button_url: 
 seo:
   heading: Something
   description: Something
-  image: "/images/image-google.png"
+  image: "/uploads/image-google.png"
   background_path: 
   background_colour: "#f4f4f4"
-  button_text: ''
-  button_url: ''
+  button_text: 
+  button_url: 
 templates:
   heading: Something
   description: Something
-  image_top_path: "/images/image-devices.png"
-  image_bottom_path: "/images/image-devices.png"
+  image_top_path: "/uploads/image-devices.png"
+  image_bottom_path: "/uploads/image-devices.png"
   background_path: 
   background_colour: "#151f26"
-  button_text: ''
-  button_url: ''
+  button_text: 
+  button_url: 
 features:
   items:
   - title: Share moments instantly
@@ -64,10 +63,10 @@ features:
   - title: Share moments instantly
     description: The only sitebuilder to give you a consistent, experience across
       your phone, tablet or computer.
-  background_path: "/images/background-sharing.jpg"
+  background_path: "/uploads/background-sharing.jpg"
   background_colour: "#ffffff"
-  button_text: ''
-  button_url: ''
+  button_text: 
+  button_url: 
 pricing:
   tier_1:
   - Free hosting!
@@ -89,8 +88,9 @@ pricing:
   - Item 5
   background_path: 
   background_colour: "#151f26"
-  button_text: ''
-  button_url: ''
+  button_text: 
+  button_url: 
+layout: default
 ---
 
 {% include blocks/block--intro.html %}
