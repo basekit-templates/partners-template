@@ -123,6 +123,12 @@ h1, h2, h3, h4, h5, h6 {
   .article {
     width: auto;
     min-width: 25%;
+    &--arrange-right {
+      order: 1;
+    }
+    &--arrange-left {
+      order: -1;
+    }
   }
 
   // 2 article items
