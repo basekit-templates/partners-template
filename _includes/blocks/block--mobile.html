@@ -1,14 +1,14 @@
 {% capture background %} style="background-color:{{ page.mobile.background_colour }}; background-image:url({{ page.mobile.background_path }}); background-position: center center; background-size: cover"{% endcapture %}
 
-<section class="block  block--mobile  block--text-align-left" {{ background }}>
+<section class="block  block--mobile  block--collapse  block--text-align-left" {{ background }}>
 
 	<div class="container  content-arrange">
 
 		<article class="block__article  article  article--arrange-right  article--text-shade-light  typeset">
 			{% if page.mobile.steps %}
-			<ul class="block__list  list--steps">
+			<ul class="block__list  list  list--steps  list--unstyled">
 				{% for step in page.mobile.steps %}
-				<ol>
+				<ol class="item">
 					<h2>{{ step.title }}</h2>
 					<p>{{ step.description }}</p>
 				</ol>

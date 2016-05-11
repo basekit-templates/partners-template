@@ -1,75 +1,93 @@
 ---
 layout: default
-title: Home
-excerpt: Home page
+title: "Home"
+excerpt: "Home page"
 intro:
-  logo_path: 'https://avatars0.githubusercontent.com/u/1006602?s=100'
-  heading: Something
-  description: Something
-  background_path: /images/background-hero.jpg
-  background_colour: '#333333'
-  footer: Something
+  logo_path: "https://avatars0.githubusercontent.com/u/1006602?s=100"
+  heading: "The same great experience<br/> across every device"
+  description: "Your business needs a fresh place to grow,<br/>  make it happen today."
+  background_path: "/images/background-hero.jpg"
+  background_colour: "#333333"
+  footer: "Something"
+  button_text: ""
+  button_url: ""
 devices:
-  heading: Something
-  description: Something
-  image: /images/image-editor.png
+  heading: "The new way to stay in control"
+  description: "The only sitebuilder to give you a consistent, experience across your phone, tablet or computer.
+No app and no updating required"
+  image: "/images/image-editor.png"
   background_path:
   background_colour: '#ffffff'
+  button_text: ""
+  button_url: ""
 mobile:
   image: /images/image-phone.png
   steps:
-    - title: Step 1
-      description: Something
-    - title: Step 2
-      description: Something
-    - title: Step 3
-      description: Something
+    - title: "The same"
+      description: "The only sitebuilder to give you a consistent, experience across your phone, tablet or computer.
+No app and no updating required"
+    - title: "Great experience"
+      description: "The only sitebuilder to give you a consistent, experience across your phone, tablet or computer.
+No app and no updating required"
+    - title: "Every device"
+      description: "The only sitebuilder to give you a consistent, experience across your phone, tablet or computer.
+No app and no updating required"
   background_path:
-  background_colour: '#151f26'
+  background_colour: "#151f26"
+  button_text: ""
+  button_url: ""
 seo:
-  heading: Something
-  description: Something
-  image: /images/image-google.png
+  heading: "Something"
+  description: "Something"
+  image: "/images/image-google.png"
   background_path:
-  background_colour: '#f4f4f4'
+  background_colour: "#f4f4f4"
+  button_text: ""
+  button_url: ""
 templates:
-  heading: Something
-  description: Something
-  image_top_path: /images/image-devices.png
-  image_bottom_path: /images/image-devices.png
+  heading: "Something"
+  description: "Something"
+  image_top_path: "/images/image-devices.png"
+  image_bottom_path: "/images/image-devices.png"
   background_path:
-  background_colour: '#151f26'
+  background_colour: "#151f26"
+  button_text: ""
+  button_url: ""
 features:
   items:
-    - title: Feature 1
-      description: Something
-    - title: Feature 2
-      description: Something
-    - title: Feature 3
-      description: Something
+    - title: "Share moments instantly"
+      description: "The only sitebuilder to give you a consistent, experience across your phone, tablet or computer."
+    - title: "Share moments instantly"
+      description: "The only sitebuilder to give you a consistent, experience across your phone, tablet or computer."
+    - title: "Share moments instantly"
+      description: "The only sitebuilder to give you a consistent, experience across your phone, tablet or computer."
   background_path: /images/background-sharing.jpg
   background_colour: '#ffffff'
+  button_text: ""
+  button_url: ""
 pricing:
   tier_1:
-    - Free hosting!
-    - Item 2
-    - Item 3
-    - Item 4
-    - Item 5
+    - "Free hosting!"
+    - "Item 2"
+    - "Item 3"
+    - "Item 4"
+    - "Item 5"
   tier_2:
-    - Item 1
-    - Item 2
-    - Item 3
-    - Item 4
-    - Item 5
+    - "Item 1"
+    - "Item 2"
+    - "Item 3"
+    - "Item 4"
+    - "Item 5"
   tier_3:
-    - Item 1
-    - Item 2
-    - Item 3
-    - Item 4
-    - Item 5
+    - "Item 1"
+    - "Item 2"
+    - "Item 3"
+    - "Item 4"
+    - "Item 5"
   background_path:
-  background_colour: '#151f26'
+  background_colour: "#151f26"
+  button_text: ""
+  button_url: ""
 ---
 
 {% include blocks/block--intro.html %}

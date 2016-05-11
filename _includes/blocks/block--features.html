@@ -4,9 +4,9 @@
 
 	<article class="block__article  article  article--arrange-center  typeset">
 		{% if page.features.items %}
-		<ul class="block__list  list--features">
+		<ul class="block__list  list  list--features  list--unstyled  content-arrange">
 			{% for feature in page.features.items %}
-			<li>
+			<li class="item  item--tile">
 				<h2>{{ feature.title }}</h2>
 				<p>{{ feature.description }}</p>
 			</li>
