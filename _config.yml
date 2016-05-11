@@ -3,20 +3,19 @@ title: Partners Template
 url: http://basekit-templates.github.io
 timezone: UTC
 collections:
-  posts:
-    title: Posts
-    output: true
-    is_post: true
-    layout: post
   pages:
     title: Pages
     output: true
     is_page: true
     layout: page
+  posts:
+    title: Posts
+    output: true
+    is_post: true
+    layout: post
   uploads:
     title: Uploads
     output: true
-
 exclude:
 - README.md
 - LICENSE

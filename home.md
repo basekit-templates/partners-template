@@ -16,7 +16,7 @@ devices:
   description: The only sitebuilder to give you a consistent, experience across your
     phone, tablet or computer. No app and no updating required
   image: "/images/image-editor.png"
-  background_path:
+  background_path: 
   background_colour: "#ffffff"
   button_text: ''
   button_url: ''
@@ -32,7 +32,7 @@ mobile:
   - title: Every device
     description: The only sitebuilder to give you a consistent, experience across
       your phone, tablet or computer. No app and no updating required
-  background_path:
+  background_path: 
   background_colour: "#151f26"
   button_text: ''
   button_url: ''
@@ -40,7 +40,7 @@ seo:
   heading: Something
   description: Something
   image: "/images/image-google.png"
-  background_path:
+  background_path: 
   background_colour: "#f4f4f4"
   button_text: ''
   button_url: ''
@@ -49,7 +49,7 @@ templates:
   description: Something
   image_top_path: "/images/image-devices.png"
   image_bottom_path: "/images/image-devices.png"
-  background_path:
+  background_path: 
   background_colour: "#151f26"
   button_text: ''
   button_url: ''
@@ -87,7 +87,7 @@ pricing:
   - Item 3
   - Item 4
   - Item 5
-  background_path:
+  background_path: 
   background_colour: "#151f26"
   button_text: ''
   button_url: ''
