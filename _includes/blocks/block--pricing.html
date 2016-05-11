@@ -4,45 +4,62 @@
 
 	<div class="container  content-arrange">
 
-		{% if page.pricing.tier_1 %}
+		{% if page.pricing.tier_1.items %}
 		<article class="block__article  article  article--arrange-left  article--text-shade-light  article--tile  typeset">
-			<h3>Tier 1</h3>
+			{% if page.pricing.tier_1.heading %}
+			<h4>{{ page.pricing.tier_1.heading }}</h4>
+			{% endif %}
+
 			<ul class="block__list  list  list--price-tier  list--unstyled">
-				{% for item in page.pricing.tier_1 %}
+				{% for item in page.pricing.tier_1.items %}
 				<li class="item  item--unstyled">
 					<p>{{ item }}</p>
 				</li>
 				{% endfor %}
 			</ul>
-			<a class="button">Something</a>
+
+			{% if page.pricing.tier_1.button_line %}
+			<a class="button" href="{% if page.pricing.tier_1.button_url %}{{ page.pricing.tier_1.button_url }}{% else %}#{% endif %}">{{ page.pricing.tier_1.button_line }}</a>
+			{% endif %}
+
 		</article>
 		{% endif %}
 
-		{% if page.pricing.tier_2 %}
+		{% if page.pricing.tier_2.items %}
 		<article class="block__article  article  article--arrange-left  article--text-shade-light  article--tile  typeset">
-			<h3>Tier 1</h3>
+			{% if page.pricing.tier_2.heading %}
+			<h4>{{ page.pricing.tier_2.heading }}</h4>
+			{% endif %}
 			<ul class="block__list  list  list--price-tier  list--unstyled">
-				{% for item in page.pricing.tier_2 %}
+				{% for item in page.pricing.tier_2.items %}
 				<li class="item  item--unstyled">
 					<p>{{ item }}</p>
 				</li>
 				{% endfor %}
 			</ul>
-			<a class="button">Something</a>
+
+			{% if page.pricing.tier_2.button_line %}
+			<a class="button" href="{% if page.pricing.tier_2.button_url %}{{ page.pricing.tier_2.button_url }}{% else %}#{% endif %}">{{ page.pricing.tier_2.button_line }}</a>
+			{% endif %}
 		</article>
 		{% endif %}
 
-		{% if page.pricing.tier_3 %}
+		{% if page.pricing.tier_3.items %}
 		<article class="block__article  article  article--arrange-left  article--text-shade-light  article--tile  typeset">
-			<h3>Tier 1</h3>
+			{% if page.pricing.tier_3.heading %}
+			<h4>{{ page.pricing.tier_3.heading }}</h4>
+			{% endif %}
 			<ul class="block__list  list  list--price-tier  list--unstyled">
-				{% for item in page.pricing.tier_3 %}
+				{% for item in page.pricing.tier_3.items %}
 				<li class="item  item--unstyled">
 					<p>{{ item }}</p>
 				</li>
 				{% endfor %}
 			</ul>
-			<a class="button">Something</a>
+
+			{% if page.pricing.tier_3.button_line %}
+			<a class="button" href="{% if page.pricing.tier_3.button_url %}{{ page.pricing.tier_3.button_url }}{% else %}#{% endif %}">{{ page.pricing.tier_3.button_line }}</a>
+			{% endif %}
 		</article>
 		{% endif %}
 

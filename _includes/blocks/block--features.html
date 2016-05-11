@@ -6,12 +6,16 @@
 		{% if page.features.items %}
 		<ul class="block__list  list  list--features  list--unstyled  content-arrange">
 			{% for feature in page.features.items %}
-			<li class="item  item--tile">
+			<li class="item  item--unstyled  item--tile">
 				<h2>{{ feature.title }}</h2>
 				<p>{{ feature.description }}</p>
 			</li>
 			{% endfor %}
 		</ul>
+		{% endif %}
+
+		{% if page.features.button_line %}
+		<a class="button" href="{% if page.features.button_url %}{{ page.features.button_url }}{% else %}#{% endif %}">{{ page.features.button_line }}</a>
 		{% endif %}
 	</article>
 

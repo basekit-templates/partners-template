@@ -13,7 +13,9 @@
 			<p>{{ page.seo.description }}</p>
 			{% endif %}
 
-			<a class="button">Something</a>
+			{% if page.seo.button_line %}
+			<a class="button" href="{% if page.seo.button_url %}{{ page.seo.button_url }}{% else %}#{% endif %}">{{ page.seo.button_line }}</a>
+			{% endif %}
 		</article>
 
 		<article class="block__article  article  article--arrange-right">

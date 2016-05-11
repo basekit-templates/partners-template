@@ -18,6 +18,11 @@
 		{% if page.intro.description %}
 		<p>{{ page.intro.description }}</p>
 		{% endif %}
+
+		{% if page.intro.button_line %}
+		<a class="button" href="{% if page.intro.button_url %}{{ page.intro.button_url }}{% else %}#{% endif %}">{{ page.intro.button_line }}</a>
+		{% endif %}
+
 	</article>
 
 	<footer class="block__footer  footer">

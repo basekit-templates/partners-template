@@ -15,6 +15,10 @@
 				{% endfor %}
 			</ul>
 			{% endif %}
+
+			{% if page.mobile.button_line %}
+			<a class="button" href="{% if page.mobile.button_url %}{{ page.mobile.button_url }}{% else %}#{% endif %}">{{ page.mobile.button_line }}</a>
+			{% endif %}
 		</article>
 
 		<article class="block__article  article  article--arrange-left">

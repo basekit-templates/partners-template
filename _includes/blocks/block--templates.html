@@ -17,7 +17,9 @@
 		<p>{{ page.templates.description }}</p>
 		{% endif %}
 
-		<a class="button">Something</a>
+		{% if page.templates.button_line %}
+		<a class="button" href="{% if page.templates.button_url %}{{ page.templates.button_url }}{% else %}#{% endif %}">{{ page.templates.button_line }}</a>
+		{% endif %}
 	</article>
 
 	<footer class="block__footer  footer">

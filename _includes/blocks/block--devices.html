@@ -10,6 +10,10 @@
 		{% if page.devices.description %}
 		<p>{{ page.devices.description }}</p>
 		{% endif %}
+
+		{% if page.devices.button_line %}
+		<a class="button" href="{% if page.devices.button_url %}{{ page.devices.button_url }}{% else %}#{% endif %}">{{ page.devices.button_line }}</a>
+		{% endif %}
 	</article>
 
 	<article class="block__article  article">
