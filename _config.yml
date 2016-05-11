@@ -1,5 +1,6 @@
+---
 title: Partners Template
-url: http://basekit-templates.github.io/partners-template
+url: http://basekit-templates.github.io
 timezone: UTC
 collections:
   posts:
@@ -13,51 +14,33 @@ collections:
   uploads:
     title: Uploads
     output: true
-
-# Excluded files
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    is_page: true
+    layout: page
+- scope:
+    path: ''
+    type: posts
+  values:
+    is_post: true
+    layout: post
+    icon: article
 exclude:
 - README.md
 - LICENSE
-
-# Gems
 gems:
 - jekyll-sitemap
-
-# Permalinks
 permalink: pretty
-
-# Posts
-excerpt_separator: <!-- more -->
-
-# Site info
-description: "The site builder"
-avatar: "https://avatars0.githubusercontent.com/u/1006602?s=100"
-avatarurl: "https://avatars0.githubusercontent.com/u/1006602"
+excerpt_separator: "<!-- more -->"
+description: The site builder
+avatar: https://avatars0.githubusercontent.com/u/1006602?s=100
+avatarurl: https://avatars0.githubusercontent.com/u/1006602
 colour: "#383838"
-
-# Metadata
 meta:
   facebook: TeamBaseKit
   twitter: BaseKit
-
-# CSS
 sass:
   style: compressed
-
-# Defaults
-defaults:
-  -
-    scope:
-      path: ""
-      type: pages
-    values:
-      is_page: true
-      layout: page
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      is_post: true
-      layout: post
-      icon: article
