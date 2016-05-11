@@ -7,27 +7,16 @@ collections:
     title: Posts
     output: true
     is_post: true
+    layout: post
   pages:
     title: Pages
     output: true
     is_page: true
+    layout: page
   uploads:
     title: Uploads
     output: true
-defaults:
-- scope:
-    path: ''
-    type: pages
-  values:
-    is_page: true
-    layout: page
-- scope:
-    path: ''
-    type: posts
-  values:
-    is_post: true
-    layout: post
-    icon: article
+
 exclude:
 - README.md
 - LICENSE
