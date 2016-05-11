@@ -8,11 +8,6 @@ collections:
     output: true
     is_post: true
     layout: post
-  pages:
-    title: Pages
-    output: true
-    is_page: true
-    layout: page
   uploads:
     title: Uploads
     output: true
