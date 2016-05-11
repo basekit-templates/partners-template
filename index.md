@@ -1,59 +1,108 @@
 ---
-title: Welcome
+title: Home
 layout: default
-excerpt: Welcome to BaseKit
+excerpt: Home page
+intro:
+  logo_path: https://avatars0.githubusercontent.com/u/1006602?s=100
+  heading: The same great experience<br/> across every device
+  description: Your business needs a fresh place to grow,<br/>  make it happen today.
+  background_path: "/images/background-hero.jpg"
+  background_colour: "#333333"
+  footer: Something
+  button_text: ''
+  button_url: ''
+devices:
+  heading: The new way to stay in control
+  description: The only sitebuilder to give you a consistent, experience across your
+    phone, tablet or computer. No app and no updating required
+  image: "/images/image-editor.png"
+  background_path: 
+  background_colour: "#ffffff"
+  button_text: ''
+  button_url: ''
+mobile:
+  image: "/images/image-phone.png"
+  steps:
+  - title: The same
+    description: The only sitebuilder to give you a consistent, experience across
+      your phone, tablet or computer. No app and no updating required
+  - title: Great experience
+    description: The only sitebuilder to give you a consistent, experience across
+      your phone, tablet or computer. No app and no updating required
+  - title: Every device
+    description: The only sitebuilder to give you a consistent, experience across
+      your phone, tablet or computer. No app and no updating required
+  background_path: 
+  background_colour: "#151f26"
+  button_text: ''
+  button_url: ''
+seo:
+  heading: Something
+  description: Something
+  image: "/images/image-google.png"
+  background_path: 
+  background_colour: "#f4f4f4"
+  button_text: ''
+  button_url: ''
+templates:
+  heading: Something
+  description: Something
+  image_top_path: "/images/image-devices.png"
+  image_bottom_path: "/images/image-devices.png"
+  background_path: 
+  background_colour: "#151f26"
+  button_text: ''
+  button_url: ''
+features:
+  items:
+  - title: Share moments instantly
+    description: The only sitebuilder to give you a consistent, experience across
+      your phone, tablet or computer.
+  - title: Share moments instantly
+    description: The only sitebuilder to give you a consistent, experience across
+      your phone, tablet or computer.
+  - title: Share moments instantly
+    description: The only sitebuilder to give you a consistent, experience across
+      your phone, tablet or computer.
+  background_path: "/images/background-sharing.jpg"
+  background_colour: "#ffffff"
+  button_text: ''
+  button_url: ''
+pricing:
+  tier_1:
+  - Free hosting!
+  - Item 2
+  - Item 3
+  - Item 4
+  - Item 5
+  tier_2:
+  - Item 1
+  - Item 2
+  - Item 3
+  - Item 4
+  - Item 5
+  tier_3:
+  - Item 1
+  - Item 2
+  - Item 3
+  - Item 4
+  - Item 5
+  background_path: 
+  background_colour: "#151f26"
+  button_text: ''
+  button_url: ''
 ---
 
-{% capture hero-content %}
-<h1>The same great experience<br/> across every device</h1>
-<p>Your business needs a fresh place to grow,<br/> make it happen today.</p>
-<a href="#" class="button">Select Template</a>
-{% endcapture %}
+{% include blocks/block--intro.html %}
 
-{% include blocks/default.html content=hero-content header=true logo=true text-align="center" text-shade="light" background="images/background-hero.jpg" %}
+{% include blocks/block--devices.html %}
 
+{% include blocks/block--mobile.html %}
 
-{% capture editor-content %}
-<h2>The new way to stay in control</h2>
-<p>The only sitebuilder to give you a consistent, experience across your phone, tablet or computer.<br/> No app and no updating required</p>
-{% include image.html image="images/image-editor.png" %}
-{% endcapture %}
+{% include blocks/block--seo.html %}
 
-{% include blocks/default.html content=editor-content text-align="center" id="editor" %}
+{% include blocks/block--templates.html %}
 
+{% include blocks/block--features.html %}
 
-{% capture phone-content %}
-{% include image.html image="images/image-phone.png" %}
-<div class="content">
-  <h2>The same great experience<br/> across every device</h2>
-  <p>The only sitebuilder to give you a consistent, experience across your phone, tablet or computer.<br/> No app and no updating required</p>
-</div>
-{% endcapture %}
-
-{% include blocks/default.html content=phone-content text-align="right" text-shade="light" background="#151F26" content-arrange=true id="every-device" %}
-
-
-{% capture google-content %}
-<h2>Get found at the top</h2>
-<p>The only sitebuilder to give you a consistent, experience across your phone, tablet or computer.<br/> No app and no updating required</p>
-{% include image.html image="images/image-google.png" %}
-{% endcapture %}
-
-{% include blocks/default.html content=google-content text-align="center" %}
-
-
-{% capture share-content %}
-<div class="content">
-  <h2>Share moments instantly</h2>
-  <p>The only sitebuilder to give you a consistent, experience across your phone, tablet or computer.<br/> No app and no updating required</p>
-</div>
-{% endcapture %}
-
-{% include blocks/default.html content=share-content text-align="left" background="images/background-sharing.jpg" id="share-moments" %}
-
-
-{% capture devices-content %}
-{% include image.html image="images/image-devices.png" %}
-{% endcapture %}
-
-{% include blocks/default.html content=devices-content background="#151F26" text-align="center" %}
+{% include blocks/block--pricing.html %}
