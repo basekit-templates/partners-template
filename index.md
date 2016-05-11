@@ -69,33 +69,33 @@ features:
   button_url: 
 pricing:
   tier_1:
+    heading: Basic
     items:
     - Free hosting!
     - Item 2
     - Item 3
     - Item 4
     - Item 5
-    heading: Basic
     button_line: Try basic
     button_url: 
   tier_2:
+    heading: Medium
     items:
     - Free hosting!
     - Item 2
     - Item 3
     - Item 4
     - Item 5
-    heading: Medium
     button_line: Try medium
     button_url: 
   tier_3:
+    heading: Advanced
     items:
     - Free hosting!
     - Item 2
     - Item 3
     - Item 4
     - Item 5
-    heading: Advanced
     button_line: Try advanced
     button_url: 
   background_path: 
