@@ -7,7 +7,7 @@ intro:
   description: "Create a beautiful site, blog or online store \n"
   background_path: "/uploads/background-hero.jpg"
   background_colour: "#333333"
-  footer: Something
+  footer: 
   button_line: Launch your site
   button_url: 
 devices:
