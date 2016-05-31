@@ -3,9 +3,8 @@ title: Home
 excerpt: Home page
 intro:
   logo_path: https://avatars0.githubusercontent.com/u/1006602?s=100
-  heading: The same great experience<br/> across every device
-  description: "Give your business the website it deserves <br/> Create a beautiful
-    site, blog or online store \n"
+  heading: Give your business the website it deserves
+  description: "Create a beautiful site, blog or online store \n"
   background_path: "/uploads/background-hero.jpg"
   background_colour: "#333333"
   footer: Something
