@@ -28,8 +28,7 @@ mobile:
   - title: Great experience
     description: The only sitebuilder to give you a consistent, experience across
       your phone, tablet or computer. No app and no updating required
-  - title: 4th step
-    description: This is the 4th s
+  - 
   - title: Every device
     description: The only sitebuilder to give you a consistent, experience across
       your phone, tablet or computer. No app and no updating required
@@ -107,9 +106,9 @@ pricing:
 layout: default
 ---
 
-{% include blocks/block--devices.html %}
-
 {% include blocks/block--intro.html %}
+
+{% include blocks/block--devices.html %}
 
 {% include blocks/block--mobile.html %}
 
