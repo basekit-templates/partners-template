@@ -6,7 +6,7 @@ intro:
   heading: Give your business the website it deserves
   description: "Create a beautiful site, blog or online store \n"
   background_path: "/uploads/background-hero.jpg"
-  background_colour: "#333333"
+  background_colour: "#1a1a1a"
   footer: 
   button_line: Launch your site
   button_url: 
@@ -32,7 +32,7 @@ mobile:
     description: The only sitebuilder to give you a consistent, experience across
       your phone, tablet or computer. No app and no updating required
   - title: 4th step
-    description: This is the 4th step
+    description: This is the 4th s
   background_path: 
   background_colour: "#151f26"
   button_line: 
@@ -107,9 +107,9 @@ pricing:
 layout: default
 ---
 
-{% include blocks/block--intro.html %}
-
 {% include blocks/block--devices.html %}
+
+{% include blocks/block--intro.html %
 
 {% include blocks/block--mobile.html %}
 
