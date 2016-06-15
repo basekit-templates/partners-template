@@ -28,11 +28,11 @@ mobile:
   - title: Great experience
     description: The only sitebuilder to give you a consistent, experience across
       your phone, tablet or computer. No app and no updating required
+  - title: 4th step
+    description: This is the 4th s
   - title: Every device
     description: The only sitebuilder to give you a consistent, experience across
       your phone, tablet or computer. No app and no updating required
-  - title: 4th step
-    description: This is the 4th s
   background_path: 
   background_colour: "#151f26"
   button_line: 
