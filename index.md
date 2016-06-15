@@ -109,7 +109,7 @@ layout: default
 
 {% include blocks/block--devices.html %}
 
-{% include blocks/block--intro.html %
+{% include blocks/block--intro.html %}
 
 {% include blocks/block--mobile.html %}
 
