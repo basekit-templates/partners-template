@@ -37,7 +37,7 @@ mobile:
   button_url: 
 seo:
   heading: Something
-  description: Something
+  description: Something else
   image: "/uploads/image-google.png"
   background_path: 
   background_colour: "#f4f4f4"
