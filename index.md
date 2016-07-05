@@ -22,16 +22,17 @@ devices:
 mobile:
   image: "/uploads/image-phone.png"
   steps:
-  - title: The same
-    description: The only sitebuilder to give you a consistent, experience across
-      your phone, tablet or computer. No app and no updating required
-  - title: Great experience
-    description: The only sitebuilder to give you a consistent, experience across
-      your phone, tablet or computer. No app and no updating required
+  - title: Built for busy people
+    description: |
+      Just like social media, Sitebuilder is designed to get things done in minutes. Change colours, fonts, images and more, to create your own unique website.
+  - title: Instant sharing
+    description: "Take a photo on your phone and publish straight to your website.
+      Your visitors will love how quickly you share things. \n"
   - 
-  - title: Every device
-    description: The only sitebuilder to give you a consistent, experience across
-      your phone, tablet or computer. No app and no updating required
+  - title: Move to the top
+    description: 'Websites with fresh content rank higher in search engines. Sitebuilder’s
+      speed and simplicity makes it even easier to keep your audience updated, at
+      home or on-the-go. '
   background_path: 
   background_colour: "#151f26"
   button_line: 
@@ -45,8 +46,9 @@ seo:
   button_line: 
   button_url: 
 templates:
-  heading: Something
-  description: Something
+  heading: 'Designed by professionals '
+  description: Each template delivers high quality, a professional finish and custom
+    design for creating something truly unique.
   image_top_path: "/uploads/image-devices.png"
   image_bottom_path: "/uploads/image-devices.png"
   background_path: 
