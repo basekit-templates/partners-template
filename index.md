@@ -3,7 +3,7 @@ title: Home
 excerpt: Home page
 intro:
   logo_path: https://avatars0.githubusercontent.com/u/1006602?s=100
-  heading: Give your business the website it deserves
+  heading: Grow your business with a beautiful website
   description: "Create a beautiful site, blog or online store \n"
   background_path: "/uploads/background-hero.jpg"
   background_colour: "#1a1a1a"
