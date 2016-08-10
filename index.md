@@ -114,8 +114,6 @@ layout: default
 
 {% include blocks/block--mobile.html %}
 
-{% include blocks/block--seo.html %}
-
 {% include blocks/block--templates.html %}
 
 {% include blocks/block--features.html %}
