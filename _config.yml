@@ -10,6 +10,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  rows:
+    title: Rows
+    output: false
 exclude:
 - README.md
 - LICENSE

@@ -1,0 +1,7 @@
+---
+---
+
+@import "normalize";
+@import "sassline";
+
+{% assign rows = site.rows | sort: 'position' %}{% for row in rows %}{{ row.style }}{% endfor %}

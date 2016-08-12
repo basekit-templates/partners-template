@@ -1,0 +1,67 @@
+---
+id: steps
+position: 2
+style: |
+  .steps {
+    text-align: center;
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      max-width: 1200px;
+      margin: 6rem auto;
+    }
+    h4 {
+      color: #3A71B0;
+    }
+    &__item {
+      width: 33.33%;
+      padding: 0 3.2rem;
+      margin: 2rem 0;
+      position: relative;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: .6rem;
+        height: 50.4%;
+        width: 1px;
+        background: #BDBDBD;
+        transform: rotate(-10deg);
+      }
+      &:after {
+        bottom: 0;
+        top: auto;
+        transform: rotate(10deg);
+      }
+      &:last-of-type:before,
+      &:last-of-type:after {
+        display: none;
+      }
+    }
+  }
+script: |
+  // Steps js
+step_items:
+- step_icon: "/uploads/ic_account_circle_black.svg"
+  step_title: "Choose a template"
+  step_content: "Take a tour through our beautiful template library and choose the design you love."
+- step_icon: "/uploads/ic_web_black.svg"
+  step_title: "Make it your own"
+  step_content: "Instantly bring your site to life by customising images, text, colours and more."
+- step_icon: "/uploads/ic_publish_black.svg"
+  step_title: "Launch your site"
+  step_content: "Get your site online in just two clicks and welcome your new customers today."
+---
+
+<section class="steps">
+  <ul class="steps__list">
+    {% for item in page.step_items %}
+      <ol class="steps__item  typeset">
+        <img src="{{ item.step_icon }}" />
+        <h4>{{ item.step_title }}</h4>
+        {{ item.step_content | markdownify }}
+      </ol>
+    {% endfor %}
+  </ul>
+</header>
