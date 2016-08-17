@@ -4,4 +4,50 @@
 @import "normalize";
 @import "sassline";
 
+html {
+  @include rootsize;
+  -webkit-font-smoothing: antialiased;
+}
+
+.typeset h1 {
+  @include sassline($fontsize: 28, $font: $bodytype, $lineheight: 3, $below: 0, $breakpoint: all);
+}
+
+.typeset h2 {
+  @include sassline($fontsize: 22, $font: $bodytype, $lineheight: 2.8, $below: 0.8, $breakpoint: all);
+}
+
+.typeset h3 {
+  @include sassline($fontsize: 14, $font: $bodytype, $lineheight: 1.4, $below: 0.6, $breakpoint: all);
+}
+
+.typeset h4,
+.typeset ul {
+  @include sassline($fontsize: 14, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
+}
+
+.typeset p {
+  @include sassline($fontsize: 12, $font: $bodytype, $lineheight: 1.45, $breakpoint: all);
+}
+
+.typeset .button {
+  @include fontsize(16, all);
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+  background: #4CAF50;
+  line-height: 2em;
+  padding: .4em 1.4em;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.20);
+  transition: .2s;
+  &:hover {
+    box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.10);
+    background: darken(#4CAF50, 2%);
+  }
+  &:active {
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.20);
+  }
+}
+
 {% assign rows = site.rows | sort: 'position' %}{% for row in rows %}{{ row.style }}{% endfor %}

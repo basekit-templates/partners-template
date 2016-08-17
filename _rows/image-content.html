@@ -5,31 +5,31 @@ style: |
   .image-content {
     text-align: left;
     &__main {
-      display: flex;
-      align-items: center;
       max-width: 1200px;
       margin: 0 auto;
-
+      @include breakpoint(break-2) {
+        display: flex;
+        align-items: center;
+      }
     }
-    &__image,
-    &__content {
-      width: 50%;
+    @include breakpoint(break-2) {
+      &__image,
+      &__content {
+        width: 50%;
+      }
     }
     &__content,
     &__image {
       padding: 3.2rem 2rem;
     }
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h2 {
+      font-weight: 500;
       color: #3A71B0;
     }
   }
 script: |
   // Image Content js
-maincontent: "<h4>Built for busy people</h4><p>Just like social media, Sitebuilder is designed to get things done in minutes. Change colours, fonts, images and more, to create your own unique website.</p><h4>Instant sharing</h4><p>Take a photo on your phone and publish straight to your website. Your visitors will love how quickly you share things.</p><h4>Move to the top</h4><p>Websites with fresh content rank higher in search engines. Sitebuilder’s speed and simplicity makes it even easier to keep your audience updated, at home or on-the-go.</p>"
+maincontent: "<h2>Built for busy people</h2><p>Just like social media, Sitebuilder is designed to get things done in minutes. Change colours, fonts, images and more, to create your own unique website.</p><h2>Instant sharing</h2><p>Take a photo on your phone and publish straight to your website. Your visitors will love how quickly you share things.</p><h2>Move to the top</h2><p>Websites with fresh content rank higher in search engines. Sitebuilder’s speed and simplicity makes it even easier to keep your audience updated, at home or on-the-go.</p>"
 image: "/uploads/mobile-devices.png"
 ---
 

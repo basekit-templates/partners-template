@@ -7,27 +7,36 @@ style: |
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
     background: #333;
     background-size: cover;
     background-position: center;
+    &__video {
+      position: absolute;
+      min-width: 100vw;
+      min-height: 100vh;
+      opacity: 0.75;
+      ~ * {
+        z-index: 1;
+      }
+    }
     &__top {
       text-align: left;
     }
     &__logo {
       padding: 2rem;
+      img {
+        width: 140px;
+        height: auto;
+      }
     }
     h1,
+    h2,
     p,
-    .button,
     .banner {
       color: #fff;
-    }
-    &__button {
-      display: inline-block;
-      background: #4CAF50;
-      padding: .6rem 1.6rem;
-      border-radius: 2px;
     }
     &__banner {
       display: block;
@@ -47,14 +56,18 @@ script: |
 logo_image: "/uploads/logo.svg"
 title: "Grow your business with a beautiful website"
 subtitle: "Create a site, blog or online store today"
-background_image: "/uploads/background-video.png"
+background: "#000"
+background_video: "/uploads/background-video.mp4"
 button_text: "Start your free trial"
 button_link: "#"
 banner_text: "Learn more in 60 seconds"
 banner_link: "#"
 ---
 
-<header class="header" style="background-image: url({{ page.background_image }})">
+<header class="header" style="background: {{ page.background }}">
+  <video class="header__video" autoplay loop muted playsinline poster="{{ page.background }}" >
+    <source src="{{ page.background_video }}" type="video/mp4">
+  </video>
   <div class="header__top">
     <div class="header__logo">
       <img src="{{ page.logo_image }}"/>
@@ -62,7 +75,8 @@ banner_link: "#"
   </div>
   <div class="header__main  typeset">
     <h1 class="header__title">{{ page.title }}</h1>
-    <p class="header__subtitle">{{ page.subtitle }}</p>
+    <h2 class="header__subtitle">{{ page.subtitle }}</h2>
+    <br/>
     <a class="header__button  button" href="{{ page.button_link }}">{{ page.button_text }}</a>
   </div>
   <div class="header__bottom  typeset">

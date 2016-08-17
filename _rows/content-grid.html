@@ -1,0 +1,74 @@
+---
+id: content-grid
+position: 6
+style: |
+  .content-grid {
+    padding: 2rem 0;
+    &__list {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 2rem auto;
+    }
+    &__item {
+      width: 100%;
+      @include breakpoint(break-1) {
+        width: 50%;
+      }
+      @include breakpoint(break-2) {
+        width: 33.33%;
+      }
+      padding: 0 2.5em;
+      margin: 1.5em 0;
+      position: relative;
+      h3 {
+        color: #3A71B0;
+        font-weight: 500;
+      }
+      img {
+        width: 3.5rem;
+        height: auto;
+        float: right;
+        padding: .5rem;
+        margin: .5rem 0 .5rem .5rem;
+        background: rgba(0,0,0,0.07);
+        border-radius: 100%;
+      }
+    }
+  }
+script: |
+  // Content Grid js
+content_items:
+- content_icon: "/uploads/ic_account_circle_black.svg"
+  content_title: "Choose a template"
+  content_main: "Take a tour through our beautiful template library and choose the design you love."
+- content_icon: "/uploads/ic_account_circle_black.svg"
+  content_title: "Choose a template"
+  content_main: "Take a tour through our beautiful template library and choose the design you love."
+- content_icon: "/uploads/ic_account_circle_black.svg"
+  content_title: "Choose a template"
+  content_main: "Take a tour through our beautiful template library and choose the design you love."
+- content_icon: "/uploads/ic_account_circle_black.svg"
+  content_title: "Choose a template"
+  content_main: "Take a tour through our beautiful template library and choose the design you love."
+- content_icon: "/uploads/ic_account_circle_black.svg"
+  content_title: "Choose a template"
+  content_main: "Take a tour through our beautiful template library and choose the design you love."
+- content_icon: "/uploads/ic_account_circle_black.svg"
+  content_title: "Choose a template"
+  content_main: "Take a tour through our beautiful template library and choose the design you love."
+---
+
+<section class="content-grid">
+  <div class="content-grid__list">
+    {% for item in page.content_items %}
+      <div class="content-grid__item  typeset">
+        <img src="{{ item.content_icon }}" />
+        <h3>{{ item.content_title }}</h3>
+        {{ item.content_main | markdownify }}
+      </div>
+    {% endfor %}
+  </div>
+</section>
