@@ -27,36 +27,42 @@ style: |
         color: #3A71B0;
         font-weight: 500;
       }
+    }
+    &__icon {
+      text-align: center;
+      width: 60px;
+      height: 60px;
+      float: right;
+      padding: 10px;
+      margin: .5rem 0 .5rem .5rem;
+      background: rgba(0,0,0,0.07);
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
       img {
-        width: 3.5rem;
-        height: auto;
-        float: right;
-        padding: .5rem;
-        margin: .5rem 0 .5rem .5rem;
-        background: rgba(0,0,0,0.07);
-        border-radius: 100%;
+        width: auto;
       }
     }
   }
 script: |
   // Content Grid js
 content_items:
-- content_icon: "/uploads/ic_account_circle_black.svg"
+- content_icon: "/uploads/ic_share_black_24px.svg"
   content_title: "Choose a template"
   content_main: "Take a tour through our beautiful template library and choose the design you love."
-- content_icon: "/uploads/ic_account_circle_black.svg"
+- content_icon: "/uploads/ic_format_paint_black_24px.svg"
   content_title: "Choose a template"
   content_main: "Take a tour through our beautiful template library and choose the design you love."
-- content_icon: "/uploads/ic_account_circle_black.svg"
+- content_icon: "/uploads/ic_devices_black_24px.svg"
   content_title: "Choose a template"
   content_main: "Take a tour through our beautiful template library and choose the design you love."
-- content_icon: "/uploads/ic_account_circle_black.svg"
+- content_icon: "/uploads/ic_edit_black_24px.svg"
   content_title: "Choose a template"
   content_main: "Take a tour through our beautiful template library and choose the design you love."
-- content_icon: "/uploads/ic_account_circle_black.svg"
+- content_icon: "/uploads/ic_contact_mail_black_24px.svg"
   content_title: "Choose a template"
   content_main: "Take a tour through our beautiful template library and choose the design you love."
-- content_icon: "/uploads/ic_account_circle_black.svg"
+- content_icon: "/uploads/ic_monochrome_photos_black_24px.svg"
   content_title: "Choose a template"
   content_main: "Take a tour through our beautiful template library and choose the design you love."
 ---
@@ -65,7 +71,7 @@ content_items:
   <div class="content-grid__list">
     {% for item in page.content_items %}
       <div class="content-grid__item  typeset">
-        <img src="{{ item.content_icon }}" />
+        <div class="content-grid__icon  icon"><img src="{{ item.content_icon }}" /></div>
         <h3>{{ item.content_title }}</h3>
         {{ item.content_main | markdownify }}
       </div>

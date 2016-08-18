@@ -17,10 +17,12 @@ style: |
     }
     &__item {
       width: 100%;
+      display: flex;
+      flex-direction: column;
       @include breakpoint(break-1) {
         width: 48%;
       }
-      padding: .5em 2em 2.5em;
+      padding: .5em 1.5em 2em;
       margin-bottom: 1em;
       position: relative;
       background: #ffffff;
@@ -32,6 +34,9 @@ style: |
       }
       &-footer {
         text-align: center;
+      }
+      ul {
+        flex: 1;
       }
       ul > li {
         position: relative;
@@ -75,12 +80,23 @@ style: |
     small {
       color: #ffffff;
     }
+    &__price {
+      @include sassline($fontsize: 34, $font: $bodytype, $lineheight: 3, $below: 0, $breakpoint: all);
+      color: #4281c9;
+      sup {
+        font-size: .4em;
+        line-height: 3.8em;
+        vertical-align: top;
+        color: #4281c9;
+        font-weight: 500;
+      }
+    }
     &__divider-comment {
       background: #4281c9;
       padding: .5em 1em;
     }
-    .pricing__divider {
-      margin: -3.95rem auto 0;
+    &__divider {
+      margin: -3.95rem auto 0 !important;
       max-width: 640px;
     }
     &__button {
@@ -106,7 +122,7 @@ pricing_lists:
     *   ~~Sell unlimited products~~
     *   ~~Accept major credit cards~~
     *   ~~Safe & secure shopping cart~~
-  price: "12<sup>per month</sup>"
+  price: "€12 <sup>per month</sup>"
   button_text: "Select package"
   button_link: "#"
 - title: "Storebuilder"
@@ -119,14 +135,14 @@ pricing_lists:
     *   **Sell unlimited products**
     *   **Accept major credit cards**
     *   **Safe & secure shopping cart**
-  price: "12<sup>per month</sup>"
+  price: "€20 <sup>per month</sup>"
   button_text: "Select package"
   button_link: "#"
 button_text: "Start your free trial today"
 button_link: "#"
 ---
 
-<section class="pricing  typeset">
+<section class="pricing  typeset" id="pricing">
   <h2>{{ page.title }}</h2>
   {{ page.maincontent | markdownify }}
   <div class="pricing__lists">
@@ -134,7 +150,10 @@ button_link: "#"
       <div class="pricing__item  typeset">
         <h2>{{ list.title }}</h2>
         {{ list.content | markdownify }}
-        <div class="pricing__item-footer"><a class="pricing__button  button" href="{{ list.button_link }}">{{ list.button_text }}</a></div>
+        <div class="pricing__item-footer">
+          <span class="pricing__price">{{ list.price }}</span><br/>
+          <a class="pricing__button  button" href="{{ list.button_link }}">{{ list.button_text }}</a>
+        </div>
       </div>
     {% endfor %}
   </div>
