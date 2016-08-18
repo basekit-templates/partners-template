@@ -1,0 +1,8 @@
+<svg width="49px" height="48px" viewBox="71 0 49 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="ic_web_black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(71.000000, 0.000000)">
+        <g id="Group">
+            <polygon id="Shape" points="0 0 48 0 48 48 0 48"></polygon>
+            <path d="M40,8 L8,8 C5.8,8 4.02,9.8 4.02,12 L4,36 C4,38.2 5.8,40 8,40 L40,40 C42.2,40 44,38.2 44,36 L44,12 C44,9.8 42.2,8 40,8 L40,8 Z M30,36 L8,36 L8,28 L30,28 L30,36 L30,36 Z M30,26 L8,26 L8,18 L30,18 L30,26 L30,26 Z M40,36 L32,36 L32,18 L40,18 L40,36 L40,36 Z" id="Shape" fill="#4CAF50"></path>
+        </g>
+    </g>
+</svg>
