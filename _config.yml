@@ -7,12 +7,12 @@ collections:
     output: true
     is_post: true
     layout: post
-  uploads:
-    title: Uploads
-    output: true
   rows:
     title: Rows
     output: false
+  uploads:
+    title: Uploads
+    output: true
 exclude:
 - README.md
 - LICENSE
