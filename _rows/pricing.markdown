@@ -1,6 +1,6 @@
 ---
 title: Pricing
-position: 7
+position: 6
 id: pricing
 style: |
   .pricing {

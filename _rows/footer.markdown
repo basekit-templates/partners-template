@@ -1,6 +1,6 @@
 ---
 title: Footer
-position: 8
+position: 7
 id: footer
 style: |
   .footer {

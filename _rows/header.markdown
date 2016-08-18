@@ -1,6 +1,6 @@
 ---
 title: Grow your business with a beautiful website
-position: 1
+position: 0
 id: header
 style: |
   .header {
