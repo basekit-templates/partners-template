@@ -1,6 +1,6 @@
 ---
 title: Steps
-position: 3
+position: 1
 id: steps
 style: |
   .steps {
