@@ -56,7 +56,7 @@ script: |
   // Header js
 logo_image: "/uploads/logo.svg"
 subtitle: Create a site, blog or online store today
-background: "#000"
+background_color: "#000"
 background_video: "/uploads/background-video.mp4"
 background_image: "/uploads/background-video.png"
 button_text: Start your free trial
@@ -65,7 +65,7 @@ banner_text: Learn more in 60 seconds
 banner_link: https://www.youtube.com/watch?v=OLU3-5xbzEU
 ---
 
-<header class="header" style="background: {{ page.background }}">
+<header class="header" style="background: {{ page.background_color }}">
   <video class="header__video" autoplay loop muted playsinline poster="{{ page.background_image }}" >
     <source src="{{ page.background_video }}" type="video/mp4">
   </video>
