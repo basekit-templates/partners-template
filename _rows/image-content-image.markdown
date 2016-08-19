@@ -1,6 +1,6 @@
 ---
 title: Image Content Image
-position: 4
+position: 5
 id: image-content-image
 style: |
   .image-content-image {

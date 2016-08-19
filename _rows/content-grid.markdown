@@ -1,6 +1,6 @@
 ---
 title: Content Grid
-position: 5
+position: 2
 id: content-grid
 style: |
   .content-grid {

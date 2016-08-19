@@ -1,6 +1,6 @@
 ---
 title: Refresh your site on the go
-position: 2
+position: 3
 id: fullscreen
 style: |
   .fullscreen {
