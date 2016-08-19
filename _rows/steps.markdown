@@ -48,6 +48,9 @@ style: |
           width: 1px;
         }
       }
+      img {
+        max-width: 25%;
+      }
       &:after {
         left: 0;
         right: auto;
