@@ -2,7 +2,7 @@
 title: Refresh your site on the go
 position: 2
 main_text: "### Use your mobile phone to stay in control of your website and your
-  business"
+  business!"
 background_image: "/uploads/background-phone.jpg"
 id: fullscreen
 style: |
