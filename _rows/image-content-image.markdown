@@ -4,9 +4,7 @@ position: 4
 main_text: |-
   ## Designed by professionals
 
-  ### Each template delivers high quality, a professional finish
-
-  <br/>and custom design for creating something truly unique.
+  ### Each template delivers high quality, a professional finish<br/>and custom design for creating something truly unique.
 image1: "/uploads/templates-row1.png"
 image2: "/uploads/templates-row2.png"
 id: image-content-image
