@@ -1,4 +1,29 @@
 ---
+content_items:
+- content_icon: "/uploads/ic_share_black_24px.svg"
+  content_title: Choose a template
+  content_main: Take a tour through our beautiful template library and choose the
+    design you love.
+- content_icon: "/uploads/ic_format_paint_black_24px.svg"
+  content_title: Choose a template
+  content_main: Take a tour through our beautiful template library and choose the
+    design you love.
+- content_icon: "/uploads/ic_devices_black_24px.svg"
+  content_title: Choose a template
+  content_main: Take a tour through our beautiful template library and choose the
+    design you love.
+- content_icon: "/uploads/ic_edit_black_24px.svg"
+  content_title: Choose a template
+  content_main: Take a tour through our beautiful template library and choose the
+    design you love.
+- content_icon: "/uploads/ic_contact_mail_black_24px.svg"
+  content_title: Choose a template
+  content_main: Take a tour through our beautiful template library and choose the
+    design you love.
+- content_icon: "/uploads/ic_monochrome_photos_black_24px.svg"
+  content_title: Choose a template
+  content_main: Take a tour through our beautiful template library and choose the
+    design you love.
 title: Content Grid
 position: 5
 id: content-grid
@@ -47,31 +72,6 @@ style: |
   }
 script: |
   // Content Grid js
-content_items:
-- content_icon: "/uploads/ic_share_black_24px.svg"
-  content_title: Choose a template
-  content_main: Take a tour through our beautiful template library and choose the
-    design you love.
-- content_icon: "/uploads/ic_format_paint_black_24px.svg"
-  content_title: Choose a template
-  content_main: Take a tour through our beautiful template library and choose the
-    design you love.
-- content_icon: "/uploads/ic_devices_black_24px.svg"
-  content_title: Choose a template
-  content_main: Take a tour through our beautiful template library and choose the
-    design you love.
-- content_icon: "/uploads/ic_edit_black_24px.svg"
-  content_title: Choose a template
-  content_main: Take a tour through our beautiful template library and choose the
-    design you love.
-- content_icon: "/uploads/ic_contact_mail_black_24px.svg"
-  content_title: Choose a template
-  content_main: Take a tour through our beautiful template library and choose the
-    design you love.
-- content_icon: "/uploads/ic_monochrome_photos_black_24px.svg"
-  content_title: Choose a template
-  content_main: Take a tour through our beautiful template library and choose the
-    design you love.
 ---
 
 <section class="content-grid">

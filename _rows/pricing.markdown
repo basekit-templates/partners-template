@@ -1,4 +1,34 @@
 ---
+maincontent: "### Affordable prices and packages to suit your needs"
+pricing_lists:
+- title: Sitebuilder
+  content: |
+    *   **Unlimited pages**
+    *   **Unlimited templates**
+    *   **Social integrations**
+    *   **10 free stock images**
+    *   **Developer tools**
+    *   ~~Sell unlimited products~~
+    *   ~~Accept major credit cards~~
+    *   ~~Safe & secure shopping cart~~
+  price: "€12 <sup>per month</sup>"
+  button_text: Select package
+  button_link: "#"
+- title: Storebuilder
+  content: |
+    *   **Unlimited pages**
+    *   **Unlimited templates**
+    *   **Social integrations**
+    *   **10 free stock images**
+    *   **Developer tools**
+    *   **Sell unlimited products**
+    *   **Accept major credit cards**
+    *   **Safe & secure shopping cart**
+  price: "€20 <sup>per month</sup>"
+  button_text: Select package
+  button_link: "#"
+button_text: Start your free trial today
+button_link: "#"
 title: Pricing
 position: 6
 id: pricing
@@ -110,36 +140,6 @@ style: |
   }
 script: |
   // Pricing js
-maincontent: "### Affordable prices and packages to suit your needs"
-pricing_lists:
-- title: Sitebuilder
-  content: |
-    *   **Unlimited pages**
-    *   **Unlimited templates**
-    *   **Social integrations**
-    *   **10 free stock images**
-    *   **Developer tools**
-    *   ~~Sell unlimited products~~
-    *   ~~Accept major credit cards~~
-    *   ~~Safe & secure shopping cart~~
-  price: "€12 <sup>per month</sup>"
-  button_text: Select package
-  button_link: "#"
-- title: Storebuilder
-  content: |
-    *   **Unlimited pages**
-    *   **Unlimited templates**
-    *   **Social integrations**
-    *   **10 free stock images**
-    *   **Developer tools**
-    *   **Sell unlimited products**
-    *   **Accept major credit cards**
-    *   **Safe & secure shopping cart**
-  price: "€20 <sup>per month</sup>"
-  button_text: Select package
-  button_link: "#"
-button_text: Start your free trial today
-button_link: "#"
 ---
 
 <section class="pricing  typeset" id="pricing">

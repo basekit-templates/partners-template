@@ -1,4 +1,13 @@
 ---
+logo_image: "/uploads/logo.svg"
+subtitle: Create a site, blog or online store today
+background_color: "#000"
+background_video: "/uploads/background-video.mp4"
+background_image: "/uploads/background-video.png"
+button_text: Start your free trial
+button_link: "#pricing"
+banner_text: Learn more in 60 seconds
+banner_link: https://www.youtube.com/watch?v=OLU3-5xbzEU
 title: Grow your business with a beautiful website
 position: 0
 id: header
@@ -54,15 +63,6 @@ style: |
   }
 script: |
   // Header js
-logo_image: "/uploads/logo.svg"
-subtitle: Create a site, blog or online store today
-background_color: "#000"
-background_video: "/uploads/background-video.mp4"
-background_image: "/uploads/background-video.png"
-button_text: Start your free trial
-button_link: "#pricing"
-banner_text: Learn more in 60 seconds
-banner_link: https://www.youtube.com/watch?v=OLU3-5xbzEU
 ---
 
 <header class="header" style="background: {{ page.background_color }}">

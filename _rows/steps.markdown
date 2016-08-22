@@ -1,4 +1,17 @@
 ---
+step_items:
+- step_image: "/uploads/ic_account_circle_black.svg"
+  step_title: Choose a template
+  step_content: Take a tour through our beautiful template library and choose the
+    design you love.
+- step_image: "/uploads/ic_web_black.svg"
+  step_title: Make it your own
+  step_content: Instantly bring your site to life by customising images, text, colours
+    and more.
+- step_image: "/uploads/ic_publish_black.svg"
+  step_title: Launch your site
+  step_content: Get your site online in just two clicks and welcome your new customers
+    today.
 title: Steps
 position: 1
 id: steps
@@ -73,19 +86,6 @@ style: |
   }
 script: |
   // Steps js
-step_items:
-- step_image: "/uploads/ic_account_circle_black.svg"
-  step_title: Choose a template
-  step_content: Take a tour through our beautiful template library and choose the
-    design you love.
-- step_image: "/uploads/ic_web_black.svg"
-  step_title: Make it your own
-  step_content: Instantly bring your site to life by customising images, text, colours
-    and more.
-- step_image: "/uploads/ic_publish_black.svg"
-  step_title: Launch your site
-  step_content: Get your site online in just two clicks and welcome your new customers
-    today.
 ---
 
 <section class="steps">

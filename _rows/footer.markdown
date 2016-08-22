@@ -1,4 +1,10 @@
 ---
+col1_content: "<h3>Registered at</h3><p>BaseKit Platform Ltd.<br/>One Castlepark<br/>Bristol<br/>BS2
+  0AJ</p>"
+col2_content: "<h3>Follow us</h3><a href='#'><img src='/uploads/facebook.svg'/></a>
+  <a href='#'><img src='/uploads/twitter.svg'/></a> <a href='#'><img src='/uploads/linkedin.svg'/></a>
+  <a href='#'><img src='/uploads/googleplus.svg'/></a> <a href='#'><img src='/uploads/instagram.svg'/></a>"
+col3_content: "<h3>BaseKit Platform &copy; 2016</h3><p>VAT NO: 1234567890</p>"
 title: Footer
 position: 7
 id: footer
@@ -46,12 +52,6 @@ style: |
   }
 script: |
   // Header js
-col1_content: "<h3>Registered at</h3><p>BaseKit Platform Ltd.<br/>One Castlepark<br/>Bristol<br/>BS2
-  0AJ</p>"
-col2_content: "<h3>Follow us</h3><a href='#'><img src='/uploads/facebook.svg'/></a>
-  <a href='#'><img src='/uploads/twitter.svg'/></a> <a href='#'><img src='/uploads/linkedin.svg'/></a>
-  <a href='#'><img src='/uploads/googleplus.svg'/></a> <a href='#'><img src='/uploads/instagram.svg'/></a>"
-col3_content: "<h3>BaseKit Platform &copy; 2016</h3><p>VAT NO: 1234567890</p>"
 ---
 
 <footer class="footer">
