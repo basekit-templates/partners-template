@@ -2,29 +2,29 @@
 title: Content Grid
 position: 5
 content_items:
-- content_icon: "/uploads/ic_share_black_24px.svg"
+- content_icon_image: "/uploads/ic_share_black_24px.svg"
   content_title: Choose a template
-  content_main: Take a tour through our beautiful template library and choose the
+  content_text: Take a tour through our beautiful template library and choose the
     design you love.
-- content_icon: "/uploads/ic_format_paint_black_24px.svg"
+- content_icon_image: "/uploads/ic_format_paint_black_24px.svg"
   content_title: Choose a template
-  content_main: Take a tour through our beautiful template library and choose the
+  content_text: Take a tour through our beautiful template library and choose the
     design you love.
-- content_icon: "/uploads/ic_devices_black_24px.svg"
+- content_icon_image: "/uploads/ic_devices_black_24px.svg"
   content_title: Choose a template
-  content_main: Take a tour through our beautiful template library and choose the
+  content_text: Take a tour through our beautiful template library and choose the
     design you love.
-- content_icon: "/uploads/ic_edit_black_24px.svg"
+- content_icon_image: "/uploads/ic_edit_black_24px.svg"
   content_title: Choose a template
-  content_main: Take a tour through our beautiful template library and choose the
+  content_text: Take a tour through our beautiful template library and choose the
     design you love.
-- content_icon: "/uploads/ic_contact_mail_black_24px.svg"
+- content_icon_image: "/uploads/ic_contact_mail_black_24px.svg"
   content_title: Choose a template
-  content_main: Take a tour through our beautiful template library and choose the
+  content_text: Take a tour through our beautiful template library and choose the
     design you love.
-- content_icon: "/uploads/ic_monochrome_photos_black_24px.svg"
+- content_icon_image: "/uploads/ic_monochrome_photos_black_24px.svg"
   content_title: Choose a template
-  content_main: Take a tour through our beautiful template library and choose the
+  content_text: Take a tour through our beautiful template library and choose the
     design you love.
 id: content-grid
 style: |
@@ -75,13 +75,13 @@ script: |
 ---
 
 <section class="content-grid">
-  <div class="content-grid__list">
-    {% for item in page.content_items %}
-      <div class="content-grid__item  typeset">
-        <div class="content-grid__icon  icon"><img src="{{ item.content_icon }}" /></div>
-        <h3>{{ item.content_title }}</h3>
-        {{ item.content_main | markdownify }}
-      </div>
-    {% endfor %}
-  </div>
+<div class="content-grid__list">
+{% for item in page.content_items %}
+<div class="content-grid__item  typeset">
+<div class="content-grid__icon  icon"><img src="{{ item.content_icon_image }}" /></div>
+<h3>{{ item.content_title }}</h3>
+{{ item.content_text | markdownify }}
+</div>
+{% endfor %}
+</div>
 </section>
