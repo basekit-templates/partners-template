@@ -1,13 +1,18 @@
 ---
 title: Image Content
 position: 3
-maincontent: "<h2>Built for busy people</h2><p>Just like social media, Sitebuilder
-  is designed to get things done in minutes. Change colours, fonts, images and more,
-  to create your own unique website.</p><h2>Instant sharing</h2><p>Take a photo on
-  your phone and publish straight to your website.\LYour visitors will love how quickly
-  you share things.</p><h2>Move to the top</h2><p>Websites with fresh content rank
-  higher in search engines. Sitebuilder’s speed and simplicity makes it even easier
-  to keep your audience updated, at home or on-the-go.</p>"
+main_text: |-
+  ## Built for busy people
+
+  Just like social media, Sitebuilder is designed to get things done in minutes. Change colours, fonts, images and more, to create your own unique website.
+
+  ## Instant sharing
+
+  Take a photo on your phone and publish straight to your website.   Your visitors will love how quickly you share things.
+
+  ## Move to the top
+
+  Websites with fresh content rank higher in search engines. Sitebuilder’s speed and simplicity makes it even easier to keep your audience updated, at home or on-the-go.
 image: "/uploads/mobile-devices.png"
 id: image-content
 style: |
@@ -46,7 +51,7 @@ script: |
       <img src="{{ page.image }}"/>
     </div>
     <div class="image-content__content  typeset">
-      {{ page.maincontent }}
+      {{ page.main_text }}
     </div>
   </div>
 </section>
