@@ -1,4 +1,6 @@
 ---
+title: Content Grid
+position: 5
 content_items:
 - content_icon: "/uploads/ic_share_black_24px.svg"
   content_title: Choose a template
@@ -24,8 +26,6 @@ content_items:
   content_title: Choose a template
   content_main: Take a tour through our beautiful template library and choose the
     design you love.
-title: Content Grid
-position: 5
 id: content-grid
 style: |
   .content-grid {

@@ -1,4 +1,6 @@
 ---
+title: Image Content
+position: 3
 maincontent: "<h2>Built for busy people</h2><p>Just like social media, Sitebuilder
   is designed to get things done in minutes. Change colours, fonts, images and more,
   to create your own unique website.</p><h2>Instant sharing</h2><p>Take a photo on
@@ -7,8 +9,6 @@ maincontent: "<h2>Built for busy people</h2><p>Just like social media, Sitebuild
   higher in search engines. Sitebuilder’s speed and simplicity makes it even easier
   to keep your audience updated, at home or on-the-go.</p>"
 image: "/uploads/mobile-devices.png"
-title: Image Content
-position: 3
 id: image-content
 style: |
   .image-content {

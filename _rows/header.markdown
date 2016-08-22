@@ -1,4 +1,6 @@
 ---
+title: Grow your business with a beautiful website
+position: 0
 logo_image: "/uploads/logo.svg"
 subtitle: Create a site, blog or online store today
 background_color: "#000"
@@ -8,8 +10,6 @@ button_text: Start your free trial
 button_link: "#pricing"
 banner_text: Learn more in 60 seconds
 banner_link: https://www.youtube.com/watch?v=OLU3-5xbzEU
-title: Grow your business with a beautiful website
-position: 0
 id: header
 style: |
   .header {

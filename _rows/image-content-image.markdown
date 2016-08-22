@@ -1,10 +1,10 @@
 ---
+title: Image Content Image
+position: 4
 maincontent: "<h2>Designed by professionals</h2><h3>Each template delivers high quality,
   a professional finish\L<br/>and custom design for creating something truly unique.</h3>"
 image1: "/uploads/templates-row1.png"
 image2: "/uploads/templates-row2.png"
-title: Image Content Image
-position: 4
 id: image-content-image
 style: |
   .image-content-image {

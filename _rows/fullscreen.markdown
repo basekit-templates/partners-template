@@ -1,9 +1,9 @@
 ---
+title: Refresh your site on the go
+position: 2
 maincontent: "### Use your mobile phone to stay in control of your website and your
   business"
 background_image: "/uploads/background-phone.jpg"
-title: Refresh your site on the go
-position: 2
 id: fullscreen
 style: |
   .fullscreen {

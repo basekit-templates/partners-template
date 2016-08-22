@@ -1,4 +1,6 @@
 ---
+title: Pricing
+position: 6
 maincontent: "### Affordable prices and packages to suit your needs"
 pricing_lists:
 - title: Sitebuilder
@@ -29,8 +31,6 @@ pricing_lists:
   button_link: "#"
 button_text: Start your free trial today
 button_link: "#"
-title: Pricing
-position: 6
 id: pricing
 style: |
   .pricing {
