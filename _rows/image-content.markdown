@@ -51,7 +51,7 @@ script: |
       <img src="{{ page.image }}"/>
     </div>
     <div class="image-content__content  typeset">
-      {{ page.main_text }}
+      {{ page.main_text | markdownify }}
     </div>
   </div>
 </section>
