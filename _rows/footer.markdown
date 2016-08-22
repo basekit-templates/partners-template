@@ -43,17 +43,8 @@ style: |
         width: 33.33%;
       }
     }
-    &__banner {
-      display: block;
-      padding: 1rem 0;
-      background: rgba(74,143,226,0.60);
-    }
-    .banner {
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
-      &__icon {
-        vertical-align: middle;
-      }
+    .typeset a {
+      background-image: none;
     }
   }
 script: |
