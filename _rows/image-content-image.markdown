@@ -44,7 +44,7 @@ style: |
     }
     &__image img {
       will-change: left;
-      animation: marquee 14s linear infinite;
+      animation: marquee 24s linear infinite;
       position: relative;
     }
     @keyframes marquee {
