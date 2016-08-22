@@ -59,13 +59,13 @@ script: |
 <section class="image-content-image">
   <div class="image-content-image__main">
     <div class="image-content-image__image">
-      <img src="{{ page.image_1 }}"/><img src="{{ page.image1 }}"/>
+      <img src="{{ page.image_1 }}"/><img src="{{ page.image_1 }}"/>
     </div>
     <div class="image-content-image__content  typeset">
       {{ page.main_text | markdownify }}
     </div>
     <div class="image-content-image__image">
-      <img src="{{ page.image_2 }}"/><img src="{{ page.image2 }}"/>
+      <img src="{{ page.image_2 }}"/><img src="{{ page.image_2 }}"/>
     </div>
   </div>
 </section>
