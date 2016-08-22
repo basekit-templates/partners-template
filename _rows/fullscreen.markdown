@@ -44,7 +44,7 @@ script: |
   <div class="fullscreen__main">
     <div class="fullscreen__content  typeset">
       <h2>{{ page.title }}</h2>
-      {{ page.main_text }}
+      {{ page.main_text | markdownify }}
     </div>
   </div>
 </section>
