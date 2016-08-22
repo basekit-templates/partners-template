@@ -1,12 +1,18 @@
 ---
 title: Footer
 position: 7
-col1_content: "<h3>Registered at</h3><p>BaseKit Platform Ltd.<br/>One Castlepark<br/>Bristol<br/>BS2
-  0AJ</p>"
-col2_content: "<h3>Follow us</h3><a href='#'><img src='/uploads/facebook.svg'/></a>
-  <a href='#'><img src='/uploads/twitter.svg'/></a> <a href='#'><img src='/uploads/linkedin.svg'/></a>
-  <a href='#'><img src='/uploads/googleplus.svg'/></a> <a href='#'><img src='/uploads/instagram.svg'/></a>"
-col3_content: "<h3>BaseKit Platform &copy; 2016</h3><p>VAT NO: 1234567890</p>"
+col1_text: |-
+  ### Registered at
+
+  BaseKit Platform Ltd.<br/>One Castlepark<br/>Bristol<br/>BS2 0AJ
+col2_text: |-
+  ### Follow us
+
+  <a href='#'><img src='/uploads/facebook.svg'/></a> <a href='#'><img src='/uploads/twitter.svg'/></a> <a href='#'><img src='/uploads/linkedin.svg'/></a> <a href='#'><img src='/uploads/googleplus.svg'/></a> <a href='#'><img src='/uploads/instagram.svg'/></a>
+col3_text: |-
+  ### BaseKit Platform © 2016
+
+  VAT NO: 1234567890
 id: footer
 style: |
   .footer {
@@ -55,15 +61,15 @@ script: |
 ---
 
 <footer class="footer">
-  <div class="footer__columns">
-    <div class="footer__col1 col typeset">
-      {{ page.col1_content }}
-    </div>
-    <div class="footer__col2 col typeset">
-      {{ page.col2_content }}
-    </div>
-    <div class="footer__col3 col typeset">
-      {{ page.col3_content }}
-    </div>
-  </div>
+<div class="footer__columns">
+<div class="footer__col1 col typeset">
+{{ page.col1_text }}
+</div>
+<div class="footer__col2 col typeset">
+{{ page.col2_text }}
+</div>
+<div class="footer__col3 col typeset">
+{{ page.col3_text }}
+</div>
+</div>
 </footer>
