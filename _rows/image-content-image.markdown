@@ -5,8 +5,8 @@ main_text: |-
   ## Designed by professionals
 
   ### Each template delivers high quality, a professional finish<br/>and custom design for creating something truly unique.
-image_1: "/uploads/templates-row1.png"
-image_2: "/uploads/templates-row2.png"
+top_image: "/uploads/templates-row1.png"
+bottom_image: "/uploads/templates-row2.png"
 id: image-content-image
 style: |
   .image-content-image {
@@ -59,13 +59,13 @@ script: |
 <section class="image-content-image">
   <div class="image-content-image__main">
     <div class="image-content-image__image">
-      <img src="{{ page.image_1 }}"/><img src="{{ page.image_1 }}"/>
+      <img src="{{ page.top_image }}"/><img src="{{ page.top_image }}"/>
     </div>
     <div class="image-content-image__content  typeset">
       {{ page.main_text | markdownify }}
     </div>
     <div class="image-content-image__image">
-      <img src="{{ page.image_2 }}"/><img src="{{ page.image_2 }}"/>
+      <img src="{{ page.bottom_image }}"/><img src="{{ page.bottom_image }}"/>
     </div>
   </div>
 </section>
