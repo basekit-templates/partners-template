@@ -63,13 +63,13 @@ script: |
 <footer class="footer">
 <div class="footer__columns">
 <div class="footer__col1 col typeset">
-{{ page.col1_text }}
+{{ page.col1_text | markdownify }}
 </div>
 <div class="footer__col2 col typeset">
-{{ page.col2_text }}
+{{ page.col2_text | markdownify }}
 </div>
 <div class="footer__col3 col typeset">
-{{ page.col3_text }}
+{{ page.col3_text | markdownify }}
 </div>
 </div>
 </footer>
