@@ -1,6 +1,6 @@
 ---
 title: Grow your business with a beautiful website
-position: 1
+position: 0
 logo_image: "/uploads/logo.svg"
 subtitle: Create a site, blog or online store today
 background_color: "#000"
