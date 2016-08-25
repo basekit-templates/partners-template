@@ -1,6 +1,6 @@
 ---
 title: Steps
-position: 0
+position: 1
 step_items:
 - step_image: "/uploads/ic_account_circle_black.svg"
   step_title: Choose a template
