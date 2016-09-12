@@ -2,7 +2,7 @@
 logo_image: "/uploads/logo.svg"
 subtitle: Create a site, blog or online store today
 background_color: "#000"
-background_video: "/uploads/background-video.mp4"
+background_video_file: "/uploads/background-video.mp4"
 background_image: "/uploads/background-video.png"
 button_text: Start your free trial
 button_link: "#pricing"
@@ -67,7 +67,7 @@ script: |
 
 <header class="header" style="background: {{ page.background_color }}">
   <video class="header__video" autoplay loop muted playsinline poster="{{ page.background_image }}" >
-    <source src="{{ page.background_video }}" type="video/mp4">
+    <source src="{{ page.background_video_file }}" type="video/mp4">
   </video>
   <div class="header__top">
     <div class="header__logo">
