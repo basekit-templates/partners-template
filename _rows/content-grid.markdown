@@ -3,29 +3,30 @@ title: Content Grid
 position: 5
 content_items:
 - content_icon_image: "/uploads/ic_share_black_24px.svg"
-  content_title: Choose a template?
-  content_text: Take a tour through our beautiful template library and choose the
-    design you love.
+  content_title: Social
+  content_text: Bring everything together with social integrations. Display your most
+    up-to-date posts anywhere on your website
 - content_icon_image: "/uploads/ic_format_paint_black_24px.svg"
-  content_title: Choose a template
-  content_text: Take a tour through our beautiful template library and choose the
-    design you love.
+  content_title: Customisation/template picker
+  content_text: Keep your site refreshed and on-trend by changing templates at any
+    time. You won’t lose any content and you can swap your template back at anytime
 - content_icon_image: "/uploads/ic_devices_black_24px.svg"
-  content_title: Choose a template
-  content_text: Take a tour through our beautiful template library and choose the
-    design you love.
+  content_title: Built for any device
+  content_text: It doesn’t matter what screen size your customers are viewing your
+    website on, sitebuilder sites will always look beautiful on phones, tablets and
+    computers
 - content_icon_image: "/uploads/ic_edit_black_24px.svg"
-  content_title: Choose a template
-  content_text: Take a tour through our beautiful template library and choose the
-    design you love.
+  content_title: Blog
+  content_text: Attract more customers by writing about the things you love. Using
+    blog categories and tags will help your visitors find your content easily
 - content_icon_image: "/uploads/ic_contact_mail_black_24px.svg"
-  content_title: Choose a template
-  content_text: Take a tour through our beautiful template library and choose the
-    design you love.
+  content_title: Contact forms
+  content_text: Give your customers the option to contact you directly from your website
+    and have those enquiries sent straight to your inbox
 - content_icon_image: "/uploads/ic_monochrome_photos_black_24px.svg"
-  content_title: Choose a template
-  content_text: Take a tour through our beautiful template library and choose the
-    design you love.
+  content_title: Image editor
+  content_text: Get your photos looking even better than they do on Instagram. Use
+    our image editor to add filters, resize images and reduce red eye
 id: content-grid
 style: |
   .content-grid {
