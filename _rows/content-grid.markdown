@@ -3,7 +3,7 @@ title: Content Grid
 position: 5
 content_items:
 - content_icon_image: "/uploads/ic_share_black_24px.svg"
-  content_title: Choose a template
+  content_title: Choose a template?
   content_text: Take a tour through our beautiful template library and choose the
     design you love.
 - content_icon_image: "/uploads/ic_format_paint_black_24px.svg"
