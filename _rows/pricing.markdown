@@ -1,8 +1,10 @@
 ---
-maincontent: "### Affordable prices and packages to suit your needs"
+title: Pricing
+position: 6
+main_text: "### Affordable prices and packages to suit your needs"
 pricing_lists:
 - title: Sitebuilder
-  content: |
+  price_text: |
     *   **Unlimited pages**
     *   **Unlimited templates**
     *   **Social integrations**
@@ -15,7 +17,7 @@ pricing_lists:
   button_text: Select package
   button_link: "#"
 - title: Storebuilder
-  content: |
+  price_text: |
     *   **Unlimited pages**
     *   **Unlimited templates**
     *   **Social integrations**
@@ -29,8 +31,6 @@ pricing_lists:
   button_link: "#"
 button_text: Start your free trial today
 button_link: "#"
-title: Pricing
-position: 6
 id: pricing
 style: |
   .pricing {
@@ -144,12 +144,12 @@ script: |
 
 <section class="pricing  typeset" id="pricing">
   <h2>{{ page.title }}</h2>
-  {{ page.maincontent | markdownify }}
+  {{ page.main_text | markdownify }}
   <div class="pricing__lists">
     {% for list in page.pricing_lists %}
       <div class="pricing__item  typeset">
         <h2>{{ list.title }}</h2>
-        {{ list.content | markdownify }}
+        {{ list.price_text | markdownify }}
         <div class="pricing__item-footer">
           <span class="pricing__price">{{ list.price }}</span><br/>
           <a class="pricing__button  button" href="{{ list.button_link }}">{{ list.button_text }}</a>

@@ -1,9 +1,9 @@
 ---
-maincontent: "### Use your mobile phone to stay in control of your website and your
-  business"
-background_image: "/uploads/background-phone.jpg"
 title: Refresh your site on the go
 position: 2
+main_text: "### Use your mobile phone to stay in control of your website and your
+  business!"
+background_image: "/uploads/background-phone.jpg"
 id: fullscreen
 style: |
   .fullscreen {
@@ -44,7 +44,7 @@ script: |
   <div class="fullscreen__main">
     <div class="fullscreen__content  typeset">
       <h2>{{ page.title }}</h2>
-      {{ page.maincontent | markdownify }}
+      {{ page.main_text | markdownify }}
     </div>
   </div>
 </section>

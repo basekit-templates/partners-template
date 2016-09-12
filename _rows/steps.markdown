@@ -1,4 +1,6 @@
 ---
+title: Steps
+position: 1
 step_items:
 - step_image: "/uploads/ic_account_circle_black.svg"
   step_title: Choose a template
@@ -12,8 +14,6 @@ step_items:
   step_title: Launch your site
   step_content: Get your site online in just two clicks and welcome your new customers
     today.
-title: Steps
-position: 1
 id: steps
 style: |
   .steps {

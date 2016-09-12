@@ -1,10 +1,12 @@
 ---
-maincontent: "<h2>Designed by professionals</h2><h3>Each template delivers high quality,
-  a professional finish\L<br/>and custom design for creating something truly unique.</h3>"
-image1: "/uploads/templates-row1.png"
-image2: "/uploads/templates-row2.png"
 title: Image Content Image
 position: 4
+main_text: |-
+  ## Designed by professionals
+
+  ### Each template delivers high quality, a professional finish<br/>and custom design for creating something truly unique.
+top_image: "/uploads/templates-row1.png"
+bottom_image: "/uploads/templates-row2.png"
 id: image-content-image
 style: |
   .image-content-image {
@@ -42,7 +44,7 @@ style: |
     }
     &__image img {
       will-change: left;
-      animation: marquee 14s linear infinite;
+      animation: marquee 24s linear infinite;
       position: relative;
     }
     @keyframes marquee {
@@ -57,13 +59,13 @@ script: |
 <section class="image-content-image">
   <div class="image-content-image__main">
     <div class="image-content-image__image">
-      <img src="{{ page.image1 }}"/><img src="{{ page.image1 }}"/>
+      <img src="{{ page.top_image }}"/><img src="{{ page.top_image }}"/>
     </div>
     <div class="image-content-image__content  typeset">
-      {{ page.maincontent }}
+      {{ page.main_text | markdownify }}
     </div>
     <div class="image-content-image__image">
-      <img src="{{ page.image2 }}"/><img src="{{ page.image2 }}"/>
+      <img src="{{ page.bottom_image }}"/><img src="{{ page.bottom_image }}"/>
     </div>
   </div>
 </section>
