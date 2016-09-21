@@ -55,8 +55,7 @@ style: |
       100% { left: -100%; }
     }
   }
-script: |
-  // Image Content Image js
+script: "// Image Content Image js\n"
 ---
 
 <section class="image-content-image">
