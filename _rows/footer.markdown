@@ -47,8 +47,7 @@ style: |
       background-image: none;
     }
   }
-script: |
-  // Header js
+script: "// Header js\n"
 ---
 
 <footer class="footer">
