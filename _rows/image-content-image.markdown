@@ -13,6 +13,9 @@ style: |
     text-align: center;
     background: #4281c9;
     padding: 2rem 0;
+    &__main {
+      overflow-x: hidden;
+    }
     &__content {
       max-width: 1200px;
       margin: 0 auto;
