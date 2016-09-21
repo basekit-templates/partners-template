@@ -12,7 +12,7 @@ col2_text: |-
 col3_text: |-
   ### BaseKit Platform © 2016
 
-  VAT NO: 1234567890
+  VAT NO: 1234
 id: footer
 style: |
   .footer {
